@@ -129,7 +129,7 @@ const SignUp = () => {
                                     && password === confirmPassword
                                     && isValidEmail
                                     ?   'enable-sign-up-button'
-                                    :   ''}sign-up-button`}
+                                    :   ''}`}
                         type="submit"
                     >
                         Sign Up
