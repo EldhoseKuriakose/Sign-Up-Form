@@ -1,0 +1,85 @@
+.sign-up {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 400px;
+    margin: auto;
+    margin-top: 30px;
+    border: 1px solid black;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 70px;
+    border-radius: 10px;
+
+    .title {
+        text-align: center;
+        font-weight: 400;
+        color: black;
+    }
+
+    .sign-up-form {
+
+        .email-invalid {
+            color: red;
+            margin-top: -45px;
+        }
+
+        .verify-password-match {
+            color: red;
+            margin-top: -37px;
+        }
+
+        .sign-up-button-container {
+            width: 150px;
+            margin: 0 auto;
+
+            button {
+                width: 120px;
+                height: 50px;
+                font-family: sans-serif;
+                border: none;
+                outline: none;
+                font-size: 18px;
+                color: white;
+                margin-left: 30px;
+                margin-bottom: 10px;
+                background-color: black;
+                opacity: 60%;
+
+                &.enable-sign-up-button{
+                    opacity: 100%;
+
+                    &:hover {
+                        background-color: white;
+                        color: black;
+                        cursor: pointer;
+                        border: 1px solid black;
+                    }
+                }
+            }
+        }
+
+        .success-message {
+            color: green;
+            margin-left: 70px;
+            margin-top: -10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .sign-up {
+        width: 72vw;
+        margin: 0px;
+        height: 94vh;
+        border: none;
+
+        .sign-up-form {
+
+            .success-message {
+                margin-top: -5px;
+                font-size: 20px;
+            }
+        }
+    }
+} 
